@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5yn-2q-MHE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="CustomPopUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lw7-Kj-odM">
+                                <rect key="frame" x="103.5" y="425.5" width="207" height="45"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Internet Detected">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.63222187757492065" green="0.68705922365188599" blue="0.92496198415756226" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lw7-Kj-odM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Tve-RJ-sHJ"/>
+                            <constraint firstItem="lw7-Kj-odM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sxS-7e-3jc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jmH-lg-OtF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="710" y="64"/>
+        </scene>
+        <!--Alert View Controller-->
+        <scene sceneID="41C-DU-ZbB">
+            <objects>
+                <viewController storyboardIdentifier="AlertViewController" id="6CX-eB-0X7" customClass="AlertViewController" customModule="CustomPopUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dMv-i0-FMN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQU-tc-S6Y">
+                                <rect key="frame" x="67" y="334" width="280" height="235"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi" translatesAutoresizingMaskIntoConstraints="NO" id="zub-Sh-yRp">
+                                        <rect key="frame" x="100" y="0.0" width="80" height="80"/>
+                                        <color key="tintColor" systemColor="tintColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="MF1-dD-MW7"/>
+                                            <constraint firstAttribute="width" constant="80" id="g3o-Ki-da8"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Internet Connection.!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6T-Ie-WmQ">
+                                        <rect key="frame" x="30" y="114.5" width="220" height="15"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="15"/>
+                                        <color key="textColor" red="0.92576473951339722" green="0.2927766740322113" blue="0.23377740383148193" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something went wrong ," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnx-lH-HsF">
+                                        <rect key="frame" x="30" y="86" width="220" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                        <color key="textColor" red="0.19626578688621521" green="0.044483073055744171" blue="0.08688751608133316" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NL2-8Z-pOe">
+                                        <rect key="frame" x="40" y="160" width="200" height="32"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CB7-Hs-irD">
+                                                <rect key="frame" x="0.0" y="0.0" width="95" height="32"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="16"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Exit"/>
+                                                <connections>
+                                                    <action selector="exitBtn:" destination="6CX-eB-0X7" eventType="touchUpInside" id="UeT-8t-e9A"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgE-AT-nje">
+                                                <rect key="frame" x="105" y="0.0" width="95" height="32"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="16"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Retry"/>
+                                                <connections>
+                                                    <action selector="retryBtn:" destination="6CX-eB-0X7" eventType="touchUpInside" id="blF-0i-rRl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Vnx-lH-HsF" firstAttribute="leading" secondItem="MQU-tc-S6Y" secondAttribute="leading" constant="30" id="DcH-5k-U2p"/>
+                                    <constraint firstItem="NL2-8Z-pOe" firstAttribute="top" secondItem="MQU-tc-S6Y" secondAttribute="top" constant="160" id="Fuy-en-j53"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vnx-lH-HsF" secondAttribute="trailing" constant="30" id="IP7-s9-IRa"/>
+                                    <constraint firstAttribute="trailing" secondItem="M6T-Ie-WmQ" secondAttribute="trailing" constant="30" id="WVz-Wa-az4"/>
+                                    <constraint firstItem="NL2-8Z-pOe" firstAttribute="centerX" secondItem="MQU-tc-S6Y" secondAttribute="centerX" id="bsk-RA-Yp4"/>
+                                    <constraint firstItem="M6T-Ie-WmQ" firstAttribute="leading" secondItem="MQU-tc-S6Y" secondAttribute="leading" constant="30" id="d6o-CR-mpQ"/>
+                                    <constraint firstItem="NL2-8Z-pOe" firstAttribute="leading" secondItem="MQU-tc-S6Y" secondAttribute="leading" constant="40" id="hNY-RV-uI4"/>
+                                    <constraint firstItem="zub-Sh-yRp" firstAttribute="top" secondItem="MQU-tc-S6Y" secondAttribute="top" id="kVd-3E-kL0"/>
+                                    <constraint firstAttribute="trailing" secondItem="NL2-8Z-pOe" secondAttribute="trailing" constant="40" id="nfD-fX-km1"/>
+                                    <constraint firstItem="M6T-Ie-WmQ" firstAttribute="top" secondItem="Vnx-lH-HsF" secondAttribute="bottom" constant="8" id="oXV-3m-Oue"/>
+                                    <constraint firstItem="zub-Sh-yRp" firstAttribute="centerX" secondItem="MQU-tc-S6Y" secondAttribute="centerX" id="tQZ-Xj-H6I"/>
+                                    <constraint firstItem="Vnx-lH-HsF" firstAttribute="top" secondItem="zub-Sh-yRp" secondAttribute="bottom" constant="6" id="zJa-hZ-kFP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zzb-yU-ChW"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MQU-tc-S6Y" firstAttribute="centerY" secondItem="dMv-i0-FMN" secondAttribute="centerY" constant="3.5" id="4Kk-si-ZLm"/>
+                            <constraint firstItem="MQU-tc-S6Y" firstAttribute="leading" secondItem="zzb-yU-ChW" secondAttribute="leading" constant="67" id="QkL-FP-t0R"/>
+                            <constraint firstItem="MQU-tc-S6Y" firstAttribute="centerX" secondItem="dMv-i0-FMN" secondAttribute="centerX" id="XIZ-jf-rp7"/>
+                            <constraint firstItem="MQU-tc-S6Y" firstAttribute="top" secondItem="zzb-yU-ChW" secondAttribute="top" constant="290" id="xtI-yV-txf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alertView" destination="MQU-tc-S6Y" id="2YZ-f6-7x6"/>
+                        <outlet property="exitBtn" destination="CB7-Hs-irD" id="nfO-mM-UBG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="reV-Wo-uVV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1391" y="64"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xx5-1J-aOG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5yn-2q-MHE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KJZ-hA-y6k">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="z43-jP-iXM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zbn-K8-PnA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="64"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wifi" width="64" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
